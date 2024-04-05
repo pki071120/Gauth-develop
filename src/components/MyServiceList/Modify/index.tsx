@@ -74,6 +74,7 @@ export default function ModifyMyService({ modifyId }: { modifyId: string }) {
     method: 'post',
     onSuccess: (data) => {
       if (data) {
+        console.log(data);
         setServiceImgUrl(data.imageURL);
       }
     },

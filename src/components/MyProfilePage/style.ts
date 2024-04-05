@@ -84,12 +84,15 @@ export const ProfileSection = styled.div`
 
   label {
     position: relative;
-    cursor: pointer;
+    /* cursor: pointer; */
 
     i {
+      cursor: pointer;
       position: absolute;
       right: 0;
       bottom: 0;
+      width: 24px;
+      height: 24px;
     }
 
     :hover {
@@ -100,6 +103,10 @@ export const ProfileSection = styled.div`
       }
     }
   }
+
+  /* div {
+    cursor: pointer;
+  } */
 `;
 
 export const Profile = styled.div`
@@ -115,6 +122,25 @@ export const Profile = styled.div`
 
   img {
     object-fit: cover;
+  }
+  div {
+    color: red;
+  }
+  i {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 24px;
+    height: 24px;
+  }
+
+  :hover {
+    i {
+      path {
+        fill: #868e96;
+      }
+    }
   }
 `;
 
@@ -154,4 +180,51 @@ export const Hr = styled.hr`
   margin-top: 41px;
   background: #e6e6e6;
   border-radius: 2px;
+`;
+
+export const Circle = styled.div`
+  position: absolute;
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  div {
+    display: flex;
+    width: 6.25rem;
+    height: 3.125rem;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 0.75rem;
+    font-weight: 700;
+    backdrop-filter: blur(2px);
+    :hover {
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+    border: 0;
+    border-radius: 150px 150px 0 0;
+  }
+  label {
+    display: flex;
+    width: 6.25rem;
+    height: 3.125rem;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    backdrop-filter: blur(2px);
+    :hover {
+      background-color: rgba(255, 255, 255, 0.25);
+    }
+    border: 0;
+    border-radius: 0 0 150px 150px;
+  }
 `;

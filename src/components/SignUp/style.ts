@@ -149,7 +149,7 @@ export const SuccessWrapper = styled.div`
   gap: 10px;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   text-align: center;
   color: #515151;
   h1 {
@@ -159,5 +159,97 @@ export const SuccessWrapper = styled.div`
   p {
     font-weight: 400;
     font-size: 0.75em;
+  }
+`;
+
+export const DetailWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  color: #515151;
+  h1 {
+    font-weight: 700;
+    font-size: 1em;
+  }
+  p {
+    font-weight: 400;
+    font-size: 0.75em;
+    display: inline;
+    padding-left: 15px;
+    line-height: 20px;
+    color: #8c8c8c;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+`;
+
+export const ConfirmWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  button {
+    width: 100%;
+    height: 44px;
+    background: #3f99ee;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 0.85em;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 0.85em;
+    color: #929292;
+    text-align: center;
+    cursor: pointer;
+  }
+`;
+
+export const Form = styled.form`
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+export const Input = styled.input`
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #d7d7d7;
+  background: transparent;
+  font-size: 0.85em;
+  :focus {
+    border-bottom: 2px solid #5499d9;
+  }
+  @media (max-width: 550px) {
+    height: 7.27vw;
+  }
+`;
+
+export const Label = styled.label`
+  font-weight: 400;
+  font-size: 0.65em;
+  color: #929292;
+`;
+
+export const Wrapper = styled.div`
+  margin-top: 20px;
+  position: relative;
+  @media (max-width: 550px) {
+    margin-top: 2px;
   }
 `;

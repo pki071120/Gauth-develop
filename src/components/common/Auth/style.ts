@@ -31,7 +31,7 @@ export const SubmitWrapper = styled.div`
   button {
     width: 100%;
     height: 44px;
-    background: #5499d9;
+    background: #3f99ee;
     border-radius: 10px;
     font-weight: 400;
     font-size: 0.85em;
@@ -69,7 +69,7 @@ export const InputWrapper = styled.div`
     margin-top: 12px;
     font-weight: 400;
     font-size: 0.75em;
-    color: #f03131;
+    color: #8c8c8c;
   }
 `;
 

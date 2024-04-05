@@ -15,7 +15,6 @@ const useFetch = <T>({
 }: Props<T>) => {
   const [data, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);
-
   const fetch = useCallback(
     async (body?: any) => {
       setLoading(true);
@@ -27,7 +26,6 @@ const useFetch = <T>({
           data: body,
         });
         setData(data);
-
         if (successMessage) toast.success(successMessage);
         if (onSuccess) await onSuccess(data);
       } catch (e) {

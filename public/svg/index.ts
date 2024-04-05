@@ -34,3 +34,6 @@ export * from './ServicePublic';
 export * from './ServicePrivate';
 export * from './AddServiceImg';
 export * from './DeleteServiceImg';
+export * from './Discord';
+export * from './MailImg';
+export * from './ModifyCancel';

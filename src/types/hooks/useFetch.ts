@@ -1,4 +1,4 @@
-import { AxiosError, Method } from 'axios';
+import { AxiosError, Method, AxiosHeaderValue } from 'axios';
 
 interface Props<T> {
   url: string;
