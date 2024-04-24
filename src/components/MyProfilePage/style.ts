@@ -103,10 +103,6 @@ export const ProfileSection = styled.div`
       }
     }
   }
-
-  /* div {
-    cursor: pointer;
-  } */
 `;
 
 export const Profile = styled.div`
@@ -182,14 +178,17 @@ export const Hr = styled.hr`
   border-radius: 2px;
 `;
 
-export const Circle = styled.div`
+export const Circle = styled.div<{ modifyState: boolean }>`
+  display : ${ ({modifyState}) => (modifyState ? 'none' : 'block')};
   position: absolute;
   width: 6.25rem;
   height: 6.25rem;
   border-radius: 100%;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
-  div {
+  cursor: pointer;
+
+  div, label {
     display: flex;
     width: 6.25rem;
     height: 3.125rem;
@@ -205,26 +204,13 @@ export const Circle = styled.div`
       background-color: rgba(255, 255, 255, 0.25);
     }
     border: 0;
-    border-radius: 150px 150px 0 0;
   }
+
+  div {
+    border-radius: 150px 150px 0 0
+  }
+
   label {
-    display: flex;
-    width: 6.25rem;
-    height: 3.125rem;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
-    font-family: Pretendard;
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    backdrop-filter: blur(2px);
-    :hover {
-      background-color: rgba(255, 255, 255, 0.25);
-    }
-    border: 0;
     border-radius: 0 0 150px 150px;
   }
 `;
